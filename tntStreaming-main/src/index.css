@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.movieContainer {
+    @apply w-11/12
+}
+
+.bg_color {
+    background-color: #0d0e3a;
+}
+
+.text_color {
+    color: #e5e5e5;
+}
+
+
+.blurBack {
+    /* From https://css.glass */
+    /* From https://css.glass */
+    /* From https://css.glass */
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: rgba(5, 28, 75, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(5, 28, 75, 0.3);
+    max-width: 45vw;
+    padding: 2rem;
+}
+
+.line {
+    border: 1px solid gray;
+}
+
+#app {
+    height: 100%
+}
+
+.blurDetail {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 70%;
+    max-height: 80rem;
+}
+
+
+.long-text {
+    max-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    transition: all ease-in-out 1s;
+}
+
+.expend {
+    max-height: 50rem;
+    transition: all ease-in-out 1s;
+}
+
+@media (max-width : 1200px) {
+    .blurBack {
+        max-width: 42vw;
+    }
+}
+
+.signUp {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
